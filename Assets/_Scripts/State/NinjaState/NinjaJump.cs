@@ -27,7 +27,7 @@ public class NinjaJump : BaseState
         {
             controller.ChangeState(new NinjaThrow(controller));
         }
-        else
+        else if(controller.isGrounded)
         {
             controller.ChangeState(new NinjaIdle(controller));
         }

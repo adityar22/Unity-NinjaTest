@@ -13,6 +13,8 @@ public class NinjaSlide : BaseState
 
     public override void Update()
     {
+        controller.Move(DPad.Direction);
+        
         if (!Mathf.Approximately(DPad.GetHorizontalInput(), 0f))
         {
             controller.ChangeState(new NinjaRun(controller));

@@ -14,7 +14,7 @@ public class NinjaRun : BaseState
     public override void Update()
     {
         float moveInput = DPad.GetHorizontalInput();
-        controller.Move(DPad.Direction / controller.moveSpeed);
+        controller.Move(DPad.Direction);
 
         if (Mathf.Approximately(moveInput, 0f))
         {

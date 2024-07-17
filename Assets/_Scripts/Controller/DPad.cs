@@ -8,7 +8,7 @@ public class DPad : MonoBehaviour
     public static bool Jump { get; private set; }
     public static bool Slide { get; private set; }
     public static float Horizontal { get; private set; }
-    public static float Direction;
+    public static float Direction = 1;
     public static bool Attack { get; private set; }
     public static bool Throw { get; private set; }
     [SerializeField] Button BtnUp, BtnDown, BtnLeft, BtnRight, BtnAttack, BtnThrow;
